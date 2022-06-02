@@ -95,6 +95,18 @@ section {
   color: var(--accente-color);
 }
 
+
+
+/*.svg {
+  content: "";
+  width: 20px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../images/envelope\ \(hover\).svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/
+
 /*------------------------------------HEADER--------------------*/
 .header {
   border-bottom: 1px solid #ececec;
