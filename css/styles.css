@@ -97,18 +97,15 @@ section {
 
 
 
-/*.svg {
-  content: "";
-  width: 20px;
-  height: 16px;
+/*.header-link::before {
+  display: block;
   margin-right: 10px;
   background-image: url("../images/envelope\ \(hover\).svg");
-  background-size: contain;
-  background-repeat: no-repeat;
 }*/
 
 /*------------------------------------HEADER--------------------*/
 .header {
+  padding-top: 15px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -126,6 +123,28 @@ section {
   margin-right: 50px;
 }
 
+
+/*---------------------------contacts-------------------------*/
+.icon-tel {
+  display: inline-block;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-image: url("../images/smartphone.svg");
+
+}
+
+
+.icon-mailto {
+  background-image: url("../images/envelope\ \(hover\).svg");
+  display: inline-block;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+/*-------------------------------------------------------------*/
+
 .header-nav {
   display: flex;
 }
@@ -137,7 +156,6 @@ section {
 }
 
 .header-link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -205,6 +223,40 @@ section {
   margin-bottom: 50px;
   justify-content: center;
 }
+
+
+.hero-top-text::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+
+}
+
+.icon-anntena::before {
+  background-image: url("../images/antenna.svg");
+  margin-bottom: 30px;
+}
+
+.icon-clok::before {
+  background-image: url("../images/clock.svg");
+  margin-bottom: 30px;
+}
+
+.icon-vector::before {
+  background-image: url("../images/Vector.svg");
+  margin-bottom: 30px;
+}
+
+.icon-astronaut::before {
+  background-image: url("../images/astronaut.svg");
+  margin-bottom: 30px;
+}
+
+
 
 .btn-item:not(:last-child) {
   margin-right: 9px;
