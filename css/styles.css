@@ -103,12 +103,21 @@ section {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
-
 }
 
-.header-logo {
-  margin-right: 93px;
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
+.header-nav {
+  display: flex;
+}
+
+
+.header-logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -121,29 +130,50 @@ section {
 
 .header .container {
   display: flex;
-  align-items: center;
 }
 
-.header-list,
-.header-contact {
+.header-list {
   display: flex;
-  align-items: center;
-}
-
-.header-contact {
-  margin-left: auto;
-
-}
-
-.header-list li:not(:last-child),
-.header-contact li:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header .header-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: 90px;
 }
+
+.header-list .header-item+.header-item {
+  margin-left: 50px;
+}
+
+.header-contact {
+  display: inline-flex;
+  margin-left: 90px;
+  padding-top: 32px;
+  align-items: center;
+
+}
+
+/*.header-contact .header-contacts-item+.header-contacts-item {
+  margin-left: 30px;
+}*/
+
+.header-contact .header-link {
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contact .header-contacts-item+.header-contacts-item {
+  margin-left: 30px;
+}
+
+.header-list:not(:last-child),
+.header-contact:not(:last-child) {
+  margin-left: 50px;
+}
+
+/*.header-list .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}*/
 
 .header-nav {
   background-color: var(--main-btn-color);
@@ -157,12 +187,16 @@ section {
 }
 
 .header-link {
-  padding: 32px 0;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.header-contacts-item {
+  display: flex;
 
 }
 
@@ -183,13 +217,19 @@ section {
   color: var(--accente-color);
 }
 
-.header-contacts-item .envelope {
+/*.header-contacts-item .envelope {
   margin-right: 10px;
-}
+}*/
 
 .header-icon {
-  fill: #757575;
+  fill: currentColor;
+  display: inline-block;
+  margin-right: 10px;
+  justify-content: center;
 }
+
+
+
 
 .color {
   color: var(--accente-color);
