@@ -100,8 +100,6 @@ section {
 
 /*------------------------------------HEADER--------------------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -145,7 +143,7 @@ section {
 
 .header-contact {
   display: inline-flex;
-  margin-left: 90px;
+  margin-left: 200px;
   padding-top: 32px;
   align-items: center;
 
@@ -642,16 +640,11 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  /* margin-top: 20px;*/
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
-/*.footer-list .footer-item+.footer-item {
-  margin-top: 9px;
-}*/
 
 .footer-mailto:hover,
 .footer-mailto:focus,
