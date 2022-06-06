@@ -50,6 +50,7 @@ img {
 
 section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -534,17 +535,17 @@ section {
   justify-content: center;
 }
 
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accente-color);
+}
+
 .client-icon {
   fill: #AFB1B8;
 }
 
 .client-item:last-child {
   margin-right: 0;
-}
-
-.client-item:hover,
-.client-item:focus {
-  border: 1px solid var(--accente-color);
 }
 
 .client-link:hover .client-icon,
@@ -566,8 +567,8 @@ section {
   margin-bottom: 30px;
 }
 
-.projects-item:hover,
-.projects-item:focus {
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
